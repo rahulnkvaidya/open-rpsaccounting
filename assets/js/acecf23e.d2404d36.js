@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkrps_accounting=globalThis.webpackChunkrps_accounting||[]).push([[1903],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/open-rpsaccounting/blog","blogTitle":"Blog","authorsListPath":"/open-rpsaccounting/blog/authors"}')}}]);

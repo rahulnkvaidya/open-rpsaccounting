@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-guides/TALLY_ODBC_SETUP" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Tally ODBC Setup Guide | RPS accounting</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://rahulnkvaidya.github.io/open-rpsaccounting/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://rahulnkvaidya.github.io/open-rpsaccounting/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/TALLY_ODBC_SETUP"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Tally ODBC Setup Guide | RPS accounting"><meta data-rh="true" name="description" content="Tally ODBC Driver Installation Hindi/English Guide"><meta data-rh="true" property="og:description" content="Tally ODBC Driver Installation Hindi/English Guide"><link data-rh="true" rel="icon" href="/open-rpsaccounting/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/TALLY_ODBC_SETUP"><link data-rh="true" rel="alternate" href="https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/TALLY_ODBC_SETUP" hreflang="en"><link data-rh="true" rel="alternate" href="https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/TALLY_ODBC_SETUP" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tally ODBC Setup Guide","item":"https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/TALLY_ODBC_SETUP"}]}</script><link rel="alternate" type="application/rss+xml" href="/open-rpsaccounting/blog/rss.xml" title="RPS accounting RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/open-rpsaccounting/blog/atom.xml" title="RPS accounting Atom Feed"><link rel="stylesheet" href="/open-rpsaccounting/assets/css/styles.c51ffe61.css">
+<script src="/open-rpsaccounting/assets/js/runtime~main.be7b93fc.js" defer="defer"></script>
+<script src="/open-rpsaccounting/assets/js/main.9c1ef168.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/open-rpsaccounting/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/open-rpsaccounting/"><div class="navbar__logo"><img src="/open-rpsaccounting/img/logo.svg" alt="RPS accounting Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/open-rpsaccounting/img/logo.svg" alt="RPS accounting Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">RPS accounting</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/open-rpsaccounting/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/open-rpsaccounting/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/rahulnkvaidya/open-rpsaccounting" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/open-rpsaccounting/docs/intro"><span title="Tutorial Intro" class="linkLabel_WmDU">Tutorial Intro</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/open-rpsaccounting/docs/category/tutorial---basics"><span title="Tutorial - Basics" class="categoryLinkLabel_W154">Tutorial - Basics</span></a><button aria-label="Expand sidebar category &#x27;Tutorial - Basics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/open-rpsaccounting/docs/category/tutorial---extras"><span title="Tutorial - Extras" class="categoryLinkLabel_W154">Tutorial - Extras</span></a><button aria-label="Expand sidebar category &#x27;Tutorial - Extras&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/open-rpsaccounting/docs/faq/PAYROLL_FAQ"><span title="faq" class="categoryLinkLabel_W154">faq</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/open-rpsaccounting/docs/guides/KEYBOARD_SHORTCUTS"><span title="guides" class="categoryLinkLabel_W154">guides</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-rpsaccounting/docs/guides/KEYBOARD_SHORTCUTS"><span title="RPS Accounting - Keyboard Shortcuts Reference" class="linkLabel_WmDU">RPS Accounting - Keyboard Shortcuts Reference</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-rpsaccounting/docs/guides/TALLY_IMPORT_GUIDE"><span title="Tally Import User Guide" class="linkLabel_WmDU">Tally Import User Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/open-rpsaccounting/docs/guides/TALLY_ODBC_SETUP"><span title="Tally ODBC Setup Guide" class="linkLabel_WmDU">Tally ODBC Setup Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-rpsaccounting/docs/guides/USER_GUIDE"><span title="Payroll System - Complete User Guide" class="linkLabel_WmDU">Payroll System - Complete User Guide</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/open-rpsaccounting/docs"><span title="RPS Accounting - Documentation Index" class="linkLabel_WmDU">RPS Accounting - Documentation Index</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/open-rpsaccounting/docs/tutorials/GMAIL_SETUP"><span title="tutorials" class="categoryLinkLabel_W154">tutorials</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/open-rpsaccounting/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">guides</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Tally ODBC Setup Guide</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Tally ODBC Setup Guide</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tally-odbc-driver-installation-hindienglish-guide">Tally ODBC Driver Installation Hindi/English Guide<a href="#tally-odbc-driver-installation-hindienglish-guide" class="hash-link" aria-label="Direct link to Tally ODBC Driver Installation Hindi/English Guide" title="Direct link to Tally ODBC Driver Installation Hindi/English Guide" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites" translate="no">​</a></h3>
+<p><strong>RPS Accounting Requirements:</strong></p>
+<ul>
+<li class="">Python 3.7 or later</li>
+<li class="">pyodbc package (automatically installed with RPS Accounting)</li>
+</ul>
+<p><strong>Tally Requirements:</strong></p>
+<ul>
+<li class="">Tally.ERP 9 or later</li>
+<li class="">Tally ODBC Driver</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-tally-odbc-driver-install-karen">Step 1: Tally ODBC Driver Install Karen<a href="#step-1-tally-odbc-driver-install-karen" class="hash-link" aria-label="Direct link to Step 1: Tally ODBC Driver Install Karen" title="Direct link to Step 1: Tally ODBC Driver Install Karen" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="download-kahan-se-karen">Download Kahan Se Karen:<a href="#download-kahan-se-karen" class="hash-link" aria-label="Direct link to Download Kahan Se Karen:" title="Direct link to Download Kahan Se Karen:" translate="no">​</a></h3>
+<p><strong>Official Tally Website:</strong></p>
+<ol>
+<li class="">Visit: <a href="https://tallysolutions.com/download/" target="_blank" rel="noopener noreferrer" class="">https://tallysolutions.com/download/</a></li>
+<li class="">Find &quot;Tally ODBC Driver&quot; section</li>
+<li class="">Click &quot;Download&quot;</li>
+</ol>
+<p><strong>Direct Link:</strong></p>
+<ul>
+<li class=""><a href="https://tallysolutions.com/download/odbc-driver/" target="_blank" rel="noopener noreferrer" class="">https://tallysolutions.com/download/odbc-driver/</a></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="installation-steps">Installation Steps:<a href="#installation-steps" class="hash-link" aria-label="Direct link to Installation Steps:" title="Direct link to Installation Steps:" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p><strong>Installer Run Karen</strong></p>
+<ul>
+<li class="">Downloaded file par double-click karen</li>
+<li class="">&quot;TallyODBCDriver.exe&quot; run hoga</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Installation Wizard Follow Karen</strong></p>
+<ul>
+<li class="">&quot;Next&quot; click karen</li>
+<li class="">License agreement accept karen</li>
+<li class="">Installation path select karen (default recommended)</li>
+<li class="">&quot;Install&quot; click karen</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Complete Installation</strong></p>
+<ul>
+<li class="">&quot;Finish&quot; click karen</li>
+<li class="">Computer restart karen (recommended)</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-verify-installation">Step 2: Verify Installation<a href="#step-2-verify-installation" class="hash-link" aria-label="Direct link to Step 2: Verify Installation" title="Direct link to Step 2: Verify Installation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="windows-odbc-data-sources-check-karen">Windows ODBC Data Sources Check Karen:<a href="#windows-odbc-data-sources-check-karen" class="hash-link" aria-label="Direct link to Windows ODBC Data Sources Check Karen:" title="Direct link to Windows ODBC Data Sources Check Karen:" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p><strong>Open ODBC Manager:</strong></p>
+<ul>
+<li class="">Press <code>Win + R</code></li>
+<li class="">Type: <code>odbcad32</code></li>
+<li class="">Press Enter</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Check Driver:</strong></p>
+<ul>
+<li class="">&quot;Drivers&quot; tab pe jaayein</li>
+<li class="">List mein &quot;Tally ODBC Driver&quot; dhundhen</li>
+<li class="">Agar dikhe toh installation successful hai ✓</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="alternative-check-cmd">Alternative Check (CMD):<a href="#alternative-check-cmd" class="hash-link" aria-label="Direct link to Alternative Check (CMD):" title="Direct link to Alternative Check (CMD):" translate="no">​</a></h3>
+<div class="language-cmd codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-cmd codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">odbcconf /q /a {REGSVR &quot;C:\Program Files (x86)\Tally Solutions\Tally ODBC Driver\TallyODBC.dll&quot;}</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-tally-configuration">Step 3: Tally Configuration<a href="#step-3-tally-configuration" class="hash-link" aria-label="Direct link to Step 3: Tally Configuration" title="Direct link to Step 3: Tally Configuration" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tally-server-mode-enable-karen">Tally Server Mode Enable Karen:<a href="#tally-server-mode-enable-karen" class="hash-link" aria-label="Direct link to Tally Server Mode Enable Karen:" title="Direct link to Tally Server Mode Enable Karen:" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p><strong>Tally Open Karen</strong></p>
+</li>
+<li class="">
+<p><strong>Gateway of Tally se:</strong></p>
+<ul>
+<li class="">F12 (Configure) press karen</li>
+<li class="">&quot;Advanced Configuration&quot; select karen</li>
+</ul>
+</li>
+<li class="">
+<p><strong>ODBC Server Enable Karen:</strong></p>
+<ul>
+<li class="">&quot;Enable ODBC Server&quot; option dhundhen</li>
+<li class="">&quot;Yes&quot; select karen</li>
+<li class="">Port number: <code>9000</code> (default)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Save and Restart:</strong></p>
+<ul>
+<li class="">Accept karen</li>
+<li class="">Tally ko restart karen</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-test-connection">Step 4: Test Connection<a href="#step-4-test-connection" class="hash-link" aria-label="Direct link to Step 4: Test Connection" title="Direct link to Step 4: Test Connection" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rps-accounting-se-test-karen">RPS Accounting se Test Karen:<a href="#rps-accounting-se-test-karen" class="hash-link" aria-label="Direct link to RPS Accounting se Test Karen:" title="Direct link to RPS Accounting se Test Karen:" translate="no">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd e:\Documents\RPS Accounting</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">python</span><br></span></code></pre></div></div>
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">from</span><span class="token plain"> core</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">tally_odbc </span><span class="token keyword" style="color:#00009f">import</span><span class="token plain"> check_tally_odbc_driver</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> list_tally_companies</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Check driver</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">print</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">check_tally_odbc_driver</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic"># Should print: True</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># List companies</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">companies </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> list_tally_companies</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">print</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">companies</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic"># Should show your Tally companies</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-1-driver-not-found">Problem 1: Driver Not Found<a href="#problem-1-driver-not-found" class="hash-link" aria-label="Direct link to Problem 1: Driver Not Found" title="Direct link to Problem 1: Driver Not Found" translate="no">​</a></h3>
+<p><strong>Error:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Tally ODBC driver not found</span><br></span></code></pre></div></div>
+<p><strong>Solution:</strong></p>
+<ol>
+<li class="">Verify installation kiya hai</li>
+<li class="">ODBC Data Sources mein check karen</li>
+<li class="">Driver ko reinstall karen</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-2-cannot-connect-to-company">Problem 2: Cannot Connect to Company<a href="#problem-2-cannot-connect-to-company" class="hash-link" aria-label="Direct link to Problem 2: Cannot Connect to Company" title="Direct link to Problem 2: Cannot Connect to Company" translate="no">​</a></h3>
+<p><strong>Error:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Failed to connect to Tally: [HY000]</span><br></span></code></pre></div></div>
+<p><strong>Solution:</strong></p>
+<ol>
+<li class="">Tally company open hai?</li>
+<li class="">ODBC server enabled hai?</li>
+<li class="">Port 9000 available hai?</li>
+<li class="">Firewall blocking toh nahi?</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-3-company-not-listed">Problem 3: Company Not Listed<a href="#problem-3-company-not-listed" class="hash-link" aria-label="Direct link to Problem 3: Company Not Listed" title="Direct link to Problem 3: Company Not Listed" translate="no">​</a></h3>
+<p><strong>Error:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">No Tally companies found</span><br></span></code></pre></div></div>
+<p><strong>Solution:</strong></p>
+<ol>
+<li class="">Tally data directory check karen</li>
+<li class="">Default path: <code>C:\Tally.ERP9\Data\</code></li>
+<li class="">Companies exist karti hain?</li>
+<li class="">Folder permissions check karen</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-4-access-denied">Problem 4: Access Denied<a href="#problem-4-access-denied" class="hash-link" aria-label="Direct link to Problem 4: Access Denied" title="Direct link to Problem 4: Access Denied" translate="no">​</a></h3>
+<p><strong>Error:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[Microsoft][ODBC Driver Manager] Access denied</span><br></span></code></pre></div></div>
+<p><strong>Solution:</strong></p>
+<ol>
+<li class="">RPS Accounting ko Administrator mode mein run karen</li>
+<li class="">Tally company password protected toh nahi?</li>
+<li class="">File permissions check karen</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-configuration">Advanced Configuration<a href="#advanced-configuration" class="hash-link" aria-label="Direct link to Advanced Configuration" title="Direct link to Advanced Configuration" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="custom-tally-data-location">Custom Tally Data Location:<a href="#custom-tally-data-location" class="hash-link" aria-label="Direct link to Custom Tally Data Location:" title="Direct link to Custom Tally Data Location:" translate="no">​</a></h3>
+<p>Agar aapka Tally data custom location mein hai:</p>
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">from</span><span class="token plain"> core</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">tally_odbc </span><span class="token keyword" style="color:#00009f">import</span><span class="token plain"> list_tally_companies</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">companies </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> list_tally_companies</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">r&quot;D:\MyTallyData&quot;</span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="multiple-tally-installations">Multiple Tally Installations:<a href="#multiple-tally-installations" class="hash-link" aria-label="Direct link to Multiple Tally Installations:" title="Direct link to Multiple Tally Installations:" translate="no">​</a></h3>
+<p>Agar multiple Tally versions installed hain:</p>
+<ol>
+<li class="">Sabse latest version ka ODBC driver use karen</li>
+<li class="">Specific version ka driver path:<!-- -->
+<ul>
+<li class="">Tally 7.2: <code>C:\Program Files\Tally72\</code></li>
+<li class="">Tally 9: <code>C:\Program Files\Tally9\</code></li>
+<li class="">Tally.ERP 9: <code>C:\Program Files (x86)\Tally.ERP9\</code></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="system-requirements">System Requirements<a href="#system-requirements" class="hash-link" aria-label="Direct link to System Requirements" title="Direct link to System Requirements" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="minimum-requirements">Minimum Requirements:<a href="#minimum-requirements" class="hash-link" aria-label="Direct link to Minimum Requirements:" title="Direct link to Minimum Requirements:" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>OS:</strong> Windows 7 or later</li>
+<li class=""><strong>Tally:</strong> Version 7.2 or later</li>
+<li class=""><strong>RAM:</strong> 2 GB</li>
+<li class=""><strong>Disk Space:</strong> 100 MB free</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recommended">Recommended:<a href="#recommended" class="hash-link" aria-label="Direct link to Recommended:" title="Direct link to Recommended:" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>OS:</strong> Windows 10/11</li>
+<li class=""><strong>Tally:</strong> Tally.ERP 9 (latest)</li>
+<li class=""><strong>RAM:</strong> 4 GB or more</li>
+<li class=""><strong>Disk Space:</strong> 500 MB free</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="security-notes">Security Notes<a href="#security-notes" class="hash-link" aria-label="Direct link to Security Notes" title="Direct link to Security Notes" translate="no">​</a></h2>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Password Protected Companies:</strong></p>
+<ul>
+<li class="">Agar Tally company password protected hai</li>
+<li class="">Connection time password enter karna hoga</li>
+<li class="">Currently automatic password not supported</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>[!WARNING]
+<strong>Data Safety:</strong></p>
+<ul>
+<li class="">Migration se pehle backup zaroor len</li>
+<li class="">Read-only access - data change nahi hoga</li>
+<li class="">Tally mein kuch modify nahi hoga</li>
+</ul>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="support">Support<a href="#support" class="hash-link" aria-label="Direct link to Support" title="Direct link to Support" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rps-accounting-support">RPS Accounting Support:<a href="#rps-accounting-support" class="hash-link" aria-label="Direct link to RPS Accounting Support:" title="Direct link to RPS Accounting Support:" translate="no">​</a></h3>
+<ul>
+<li class="">Email: support@RPS Accounting.com</li>
+<li class="">Phone: 1800-XXX-XXXX</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tally-odbc-support">Tally ODBC Support:<a href="#tally-odbc-support" class="hash-link" aria-label="Direct link to Tally ODBC Support:" title="Direct link to Tally ODBC Support:" translate="no">​</a></h3>
+<ul>
+<li class="">Help: <a href="https://help.tallysolutions.com/" target="_blank" rel="noopener noreferrer" class="">https://help.tallysolutions.com/</a></li>
+<li class="">Community: <a href="https://tallysolutions.com/community/" target="_blank" rel="noopener noreferrer" class="">https://tallysolutions.com/community/</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="quick-reference">Quick Reference<a href="#quick-reference" class="hash-link" aria-label="Direct link to Quick Reference" title="Direct link to Quick Reference" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="installation-checklist">Installation Checklist<a href="#installation-checklist" class="hash-link" aria-label="Direct link to Installation Checklist" title="Direct link to Installation Checklist" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Download Tally ODBC Driver</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Install driver</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify in ODBC Data Sources</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Enable ODBC server in Tally</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Test connection from RPS Accounting</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->List Tally companies successfully</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="connection-settings">Connection Settings<a href="#connection-settings" class="hash-link" aria-label="Direct link to Connection Settings" title="Direct link to Connection Settings" translate="no">​</a></h3>
+<table><thead><tr><th>Setting</th><th>Value</th></tr></thead><tbody><tr><td>Server</td><td>localhost</td></tr><tr><td>Port</td><td>9000</td></tr><tr><td>Driver</td><td>Tally ODBC Driver</td></tr></tbody></table>
+<hr>
+<p><strong>Last Updated:</strong> February 2026
+<strong>Version:</strong> 1.0</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guides/TALLY_ODBC_SETUP.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/open-rpsaccounting/docs/guides/TALLY_IMPORT_GUIDE"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Tally Import User Guide</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/open-rpsaccounting/docs/guides/USER_GUIDE"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Payroll System - Complete User Guide</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#tally-odbc-driver-installation-hindienglish-guide" class="table-of-contents__link toc-highlight">Tally ODBC Driver Installation Hindi/English Guide</a><ul><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li></ul></li><li><a href="#step-1-tally-odbc-driver-install-karen" class="table-of-contents__link toc-highlight">Step 1: Tally ODBC Driver Install Karen</a><ul><li><a href="#download-kahan-se-karen" class="table-of-contents__link toc-highlight">Download Kahan Se Karen:</a></li><li><a href="#installation-steps" class="table-of-contents__link toc-highlight">Installation Steps:</a></li></ul></li><li><a href="#step-2-verify-installation" class="table-of-contents__link toc-highlight">Step 2: Verify Installation</a><ul><li><a href="#windows-odbc-data-sources-check-karen" class="table-of-contents__link toc-highlight">Windows ODBC Data Sources Check Karen:</a></li><li><a href="#alternative-check-cmd" class="table-of-contents__link toc-highlight">Alternative Check (CMD):</a></li></ul></li><li><a href="#step-3-tally-configuration" class="table-of-contents__link toc-highlight">Step 3: Tally Configuration</a><ul><li><a href="#tally-server-mode-enable-karen" class="table-of-contents__link toc-highlight">Tally Server Mode Enable Karen:</a></li></ul></li><li><a href="#step-4-test-connection" class="table-of-contents__link toc-highlight">Step 4: Test Connection</a><ul><li><a href="#rps-accounting-se-test-karen" class="table-of-contents__link toc-highlight">RPS Accounting se Test Karen:</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#problem-1-driver-not-found" class="table-of-contents__link toc-highlight">Problem 1: Driver Not Found</a></li><li><a href="#problem-2-cannot-connect-to-company" class="table-of-contents__link toc-highlight">Problem 2: Cannot Connect to Company</a></li><li><a href="#problem-3-company-not-listed" class="table-of-contents__link toc-highlight">Problem 3: Company Not Listed</a></li><li><a href="#problem-4-access-denied" class="table-of-contents__link toc-highlight">Problem 4: Access Denied</a></li></ul></li><li><a href="#advanced-configuration" class="table-of-contents__link toc-highlight">Advanced Configuration</a><ul><li><a href="#custom-tally-data-location" class="table-of-contents__link toc-highlight">Custom Tally Data Location:</a></li><li><a href="#multiple-tally-installations" class="table-of-contents__link toc-highlight">Multiple Tally Installations:</a></li></ul></li><li><a href="#system-requirements" class="table-of-contents__link toc-highlight">System Requirements</a><ul><li><a href="#minimum-requirements" class="table-of-contents__link toc-highlight">Minimum Requirements:</a></li><li><a href="#recommended" class="table-of-contents__link toc-highlight">Recommended:</a></li></ul></li><li><a href="#security-notes" class="table-of-contents__link toc-highlight">Security Notes</a></li><li><a href="#support" class="table-of-contents__link toc-highlight">Support</a><ul><li><a href="#rps-accounting-support" class="table-of-contents__link toc-highlight">RPS Accounting Support:</a></li><li><a href="#tally-odbc-support" class="table-of-contents__link toc-highlight">Tally ODBC Support:</a></li></ul></li><li><a href="#quick-reference" class="table-of-contents__link toc-highlight">Quick Reference</a><ul><li><a href="#installation-checklist" class="table-of-contents__link toc-highlight">Installation Checklist</a></li><li><a href="#connection-settings" class="table-of-contents__link toc-highlight">Connection Settings</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/open-rpsaccounting/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/open-rpsaccounting/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/rahulnkvaidya/open-rpsaccounting" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 RPS accounting. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

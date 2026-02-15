@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-guides/USER_GUIDE" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Payroll System - Complete User Guide | RPS accounting</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://rahulnkvaidya.github.io/open-rpsaccounting/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://rahulnkvaidya.github.io/open-rpsaccounting/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/USER_GUIDE"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Payroll System - Complete User Guide | RPS accounting"><meta data-rh="true" name="description" content="📋 Table of Contents"><meta data-rh="true" property="og:description" content="📋 Table of Contents"><link data-rh="true" rel="icon" href="/open-rpsaccounting/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/USER_GUIDE"><link data-rh="true" rel="alternate" href="https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/USER_GUIDE" hreflang="en"><link data-rh="true" rel="alternate" href="https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/USER_GUIDE" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Payroll System - Complete User Guide","item":"https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/USER_GUIDE"}]}</script><link rel="alternate" type="application/rss+xml" href="/open-rpsaccounting/blog/rss.xml" title="RPS accounting RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/open-rpsaccounting/blog/atom.xml" title="RPS accounting Atom Feed"><link rel="stylesheet" href="/open-rpsaccounting/assets/css/styles.c51ffe61.css">
+<script src="/open-rpsaccounting/assets/js/runtime~main.be7b93fc.js" defer="defer"></script>
+<script src="/open-rpsaccounting/assets/js/main.9c1ef168.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/open-rpsaccounting/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/open-rpsaccounting/"><div class="navbar__logo"><img src="/open-rpsaccounting/img/logo.svg" alt="RPS accounting Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/open-rpsaccounting/img/logo.svg" alt="RPS accounting Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">RPS accounting</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/open-rpsaccounting/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/open-rpsaccounting/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/rahulnkvaidya/open-rpsaccounting" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/open-rpsaccounting/docs/intro"><span title="Tutorial Intro" class="linkLabel_WmDU">Tutorial Intro</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/open-rpsaccounting/docs/category/tutorial---basics"><span title="Tutorial - Basics" class="categoryLinkLabel_W154">Tutorial - Basics</span></a><button aria-label="Expand sidebar category &#x27;Tutorial - Basics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/open-rpsaccounting/docs/category/tutorial---extras"><span title="Tutorial - Extras" class="categoryLinkLabel_W154">Tutorial - Extras</span></a><button aria-label="Expand sidebar category &#x27;Tutorial - Extras&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/open-rpsaccounting/docs/faq/PAYROLL_FAQ"><span title="faq" class="categoryLinkLabel_W154">faq</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/open-rpsaccounting/docs/guides/KEYBOARD_SHORTCUTS"><span title="guides" class="categoryLinkLabel_W154">guides</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-rpsaccounting/docs/guides/KEYBOARD_SHORTCUTS"><span title="RPS Accounting - Keyboard Shortcuts Reference" class="linkLabel_WmDU">RPS Accounting - Keyboard Shortcuts Reference</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-rpsaccounting/docs/guides/TALLY_IMPORT_GUIDE"><span title="Tally Import User Guide" class="linkLabel_WmDU">Tally Import User Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-rpsaccounting/docs/guides/TALLY_ODBC_SETUP"><span title="Tally ODBC Setup Guide" class="linkLabel_WmDU">Tally ODBC Setup Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/open-rpsaccounting/docs/guides/USER_GUIDE"><span title="Payroll System - Complete User Guide" class="linkLabel_WmDU">Payroll System - Complete User Guide</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/open-rpsaccounting/docs"><span title="RPS Accounting - Documentation Index" class="linkLabel_WmDU">RPS Accounting - Documentation Index</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/open-rpsaccounting/docs/tutorials/GMAIL_SETUP"><span title="tutorials" class="categoryLinkLabel_W154">tutorials</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/open-rpsaccounting/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">guides</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Payroll System - Complete User Guide</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Payroll System - Complete User Guide</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-table-of-contents">📋 Table of Contents<a href="#-table-of-contents" class="hash-link" aria-label="Direct link to 📋 Table of Contents" title="Direct link to 📋 Table of Contents" translate="no">​</a></h2>
+<ol>
+<li class=""><a href="#introduction" class="">Introduction</a></li>
+<li class=""><a href="#getting-started" class="">Getting Started</a></li>
+<li class=""><a href="#employee-management" class="">Employee Management</a></li>
+<li class=""><a href="#payroll-processing" class="">Payroll Processing</a></li>
+<li class=""><a href="#leave-management" class="">Leave Management</a></li>
+<li class=""><a href="#attendance-management" class="">Attendance Management</a></li>
+<li class=""><a href="#reports" class="">Reports</a></li>
+<li class=""><a href="#tax-management" class="">Tax Management</a></li>
+<li class=""><a href="#year-end-processing" class="">Year-End Processing</a></li>
+<li class=""><a href="#employee-self-service-portal" class="">Employee Self-Service Portal</a></li>
+<li class=""><a href="#advanced-features" class="">Advanced Features</a></li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introduction">Introduction<a href="#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-the-payroll-system">What is the Payroll System?<a href="#what-is-the-payroll-system" class="hash-link" aria-label="Direct link to What is the Payroll System?" title="Direct link to What is the Payroll System?" translate="no">​</a></h3>
+<p>The RPS Accounting Payroll System is a comprehensive, enterprise-grade solution for managing employee payroll, leave, attendance, and tax compliance. It&#x27;s designed specifically for Indian businesses with full support for:</p>
+<ul>
+<li class="">Indian tax laws (FY 2025-26)</li>
+<li class="">Form 16 generation</li>
+<li class="">Professional Tax</li>
+<li class="">PF, ESI, and other statutory deductions</li>
+<li class="">Leave carry-forward as per Indian labor laws</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-features">Key Features<a href="#key-features" class="hash-link" aria-label="Direct link to Key Features" title="Direct link to Key Features" translate="no">​</a></h3>
+<p>✅ <strong>Employee Management</strong> - Complete employee lifecycle management<br>
+<!-- -->✅ <strong>Automated Payroll</strong> - Bulk processing with voucher integration<br>
+<!-- -->✅ <strong>Salary Slips</strong> - PDF generation with password protection<br>
+<!-- -->✅ <strong>Leave Management</strong> - Accrual, approval, tracking, carry-forward<br>
+<!-- -->✅ <strong>Attendance Import</strong> - Excel, CSV, biometric device support<br>
+<!-- -->✅ <strong>Tax Compliance</strong> - TDS calculation, Form 16 generation<br>
+<!-- -->✅ <strong>Reports</strong> - 10+ comprehensive reports<br>
+<!-- -->✅ <strong>Employee Portal</strong> - Self-service access for employees<br>
+<!-- -->✅ <strong>Email/WhatsApp</strong> - Automated salary slip distribution</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-started">Getting Started<a href="#getting-started" class="hash-link" aria-label="Direct link to Getting Started" title="Direct link to Getting Started" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="installation--setup">Installation &amp; Setup<a href="#installation--setup" class="hash-link" aria-label="Direct link to Installation &amp; Setup" title="Direct link to Installation &amp; Setup" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p><strong>Install Python</strong> (3.8 or higher)</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">python --version</span><br></span></code></pre></div></div>
+</li>
+<li class="">
+<p><strong>Install Required Libraries</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">pip install customtkinter pandas weasyprint PyPDF2</span><br></span></code></pre></div></div>
+</li>
+<li class="">
+<p><strong>Launch Application</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd E:\Documents\RPS Accounting</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">python main.py</span><br></span></code></pre></div></div>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="first-time-setup">First-Time Setup<a href="#first-time-setup" class="hash-link" aria-label="Direct link to First-Time Setup" title="Direct link to First-Time Setup" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-configure-company-details">Step 1: Configure Company Details<a href="#step-1-configure-company-details" class="hash-link" aria-label="Direct link to Step 1: Configure Company Details" title="Direct link to Step 1: Configure Company Details" translate="no">​</a></h4>
+<ol>
+<li class="">Go to <strong>Settings → Company Settings</strong></li>
+<li class="">Enter:<!-- -->
+<ul>
+<li class="">Company Name</li>
+<li class="">Address</li>
+<li class="">PAN, TAN (for tax compliance)</li>
+<li class="">Upload company logo</li>
+</ul>
+</li>
+<li class="">Click <strong>Save</strong></li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-configure-email-for-salary-slip-sharing">Step 2: Configure Email (for salary slip sharing)<a href="#step-2-configure-email-for-salary-slip-sharing" class="hash-link" aria-label="Direct link to Step 2: Configure Email (for salary slip sharing)" title="Direct link to Step 2: Configure Email (for salary slip sharing)" translate="no">​</a></h4>
+<ol>
+<li class="">Go to <strong>Settings → Email Configuration</strong></li>
+<li class="">Enter SMTP details:<!-- -->
+<ul>
+<li class=""><strong>Gmail</strong>: smtp.gmail.com, Port 587</li>
+<li class=""><strong>Outlook</strong>: smtp.office365.com, Port 587</li>
+</ul>
+</li>
+<li class="">Enable &quot;App Password&quot; for Gmail users</li>
+<li class="">Click <strong>Test Email</strong> to verify</li>
+<li class="">Click <strong>Save</strong></li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-add-employees">Step 3: Add Employees<a href="#step-3-add-employees" class="hash-link" aria-label="Direct link to Step 3: Add Employees" title="Direct link to Step 3: Add Employees" translate="no">​</a></h4>
+<p>See <a href="#employee-management" class="">Employee Management</a> section below.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="employee-management">Employee Management<a href="#employee-management" class="hash-link" aria-label="Direct link to Employee Management" title="Direct link to Employee Management" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="adding-a-new-employee">Adding a New Employee<a href="#adding-a-new-employee" class="hash-link" aria-label="Direct link to Adding a New Employee" title="Direct link to Adding a New Employee" translate="no">​</a></h3>
+<p><strong>Step-by-Step:</strong></p>
+<ol>
+<li class="">Click <strong>👤 Manage Employees</strong> button</li>
+<li class="">Click <strong>Add Employee</strong></li>
+<li class="">Fill in the form:</li>
+</ol>
+<p><strong>Basic Details:</strong></p>
+<ul>
+<li class="">Employee ID (unique identifier)</li>
+<li class="">Name</li>
+<li class="">Email (for salary slips)</li>
+<li class="">Phone (for WhatsApp)</li>
+<li class="">Designation</li>
+<li class="">Department</li>
+<li class="">Date of Joining</li>
+</ul>
+<p><strong>Salary Details:</strong></p>
+<ul>
+<li class="">Basic Salary</li>
+<li class="">HRA (House Rent Allowance)</li>
+<li class="">Other Allowances</li>
+</ul>
+<p><strong>Statutory Details:</strong></p>
+<ul>
+<li class="">PAN (for tax calculation)</li>
+<li class="">UAN (Universal Account Number for PF)</li>
+<li class="">Bank Account Details</li>
+</ul>
+<ol start="4">
+<li class="">Click <strong>Save</strong></li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="adding-allowances--deductions">Adding Allowances &amp; Deductions<a href="#adding-allowances--deductions" class="hash-link" aria-label="Direct link to Adding Allowances &amp; Deductions" title="Direct link to Adding Allowances &amp; Deductions" translate="no">​</a></h3>
+<p><strong>For Individual Employee:</strong></p>
+<ol>
+<li class="">
+<p>Select employee from list</p>
+</li>
+<li class="">
+<p>Click <strong>View Details</strong></p>
+</li>
+<li class="">
+<p><strong>Allowances Tab:</strong></p>
+<ul>
+<li class="">Click <strong>Add Allowance</strong></li>
+<li class="">Enter: Name, Amount, Type (Fixed/Percentage)</li>
+<li class="">Click <strong>Save</strong></li>
+</ul>
+</li>
+<li class="">
+<p><strong>Deductions Tab:</strong></p>
+<ul>
+<li class="">Click <strong>Add Deduction</strong></li>
+<li class="">Enter: Name, Amount, Type</li>
+<li class="">Common deductions: PF, ESI, Professional Tax, Loans</li>
+<li class="">Click <strong>Save</strong></li>
+</ul>
+</li>
+</ol>
+<p><strong>Using Templates (Bulk):</strong></p>
+<ol>
+<li class="">Click <strong>📋 Templates</strong> button</li>
+<li class="">Click <strong>Create Template</strong></li>
+<li class="">Enter template name (e.g., &quot;Standard Allowances&quot;)</li>
+<li class="">Add allowances/deductions</li>
+<li class="">Click <strong>Save Template</strong></li>
+<li class="">To apply: Select template → Choose employees → Click <strong>Apply</strong></li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="editing-employee-details">Editing Employee Details<a href="#editing-employee-details" class="hash-link" aria-label="Direct link to Editing Employee Details" title="Direct link to Editing Employee Details" translate="no">​</a></h3>
+<ol>
+<li class="">Go to <strong>Manage Employees</strong></li>
+<li class="">Select employee</li>
+<li class="">Click <strong>Edit</strong></li>
+<li class="">Modify details</li>
+<li class="">Click <strong>Update</strong></li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="deactivating-employees">Deactivating Employees<a href="#deactivating-employees" class="hash-link" aria-label="Direct link to Deactivating Employees" title="Direct link to Deactivating Employees" translate="no">​</a></h3>
+<p>When an employee leaves:</p>
+<ol>
+<li class="">Select employee</li>
+<li class="">Click <strong>Deactivate Employee</strong></li>
+<li class="">Confirm action</li>
+</ol>
+<p><strong>Note:</strong> Historical data is preserved. Employee won&#x27;t appear in future payroll processing.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="payroll-processing">Payroll Processing<a href="#payroll-processing" class="hash-link" aria-label="Direct link to Payroll Processing" title="Direct link to Payroll Processing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="monthly-payroll-processing-recommended-method">Monthly Payroll Processing (Recommended Method)<a href="#monthly-payroll-processing-recommended-method" class="hash-link" aria-label="Direct link to Monthly Payroll Processing (Recommended Method)" title="Direct link to Monthly Payroll Processing (Recommended Method)" translate="no">​</a></h3>
+<p><strong>Step-by-Step:</strong></p>
+<ol>
+<li class="">
+<p><strong>Prepare Data</strong> (before processing):</p>
+<ul>
+<li class="">Import attendance for the month</li>
+<li class="">Approve all leave requests</li>
+<li class="">Update any salary changes</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Process Payroll:</strong></p>
+<ul>
+<li class="">Click <strong>📄 Bulk Process Payroll</strong></li>
+<li class="">Select <strong>Month</strong> (e.g., January)</li>
+<li class="">Select <strong>Year</strong> (e.g., 2026)</li>
+<li class="">Review employee list</li>
+<li class="">Click <strong>Process All</strong></li>
+</ul>
+</li>
+<li class="">
+<p><strong>System Automatically:</strong></p>
+<ul>
+<li class="">Calculates gross salary</li>
+<li class="">Applies allowances</li>
+<li class="">Calculates deductions (PF, TDS, PT)</li>
+<li class="">Computes net salary</li>
+<li class="">Creates accounting vouchers</li>
+<li class="">Generates salary slips</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Review:</strong></p>
+<ul>
+<li class="">Check <strong>Payroll Reports</strong> for accuracy</li>
+<li class="">Verify total payroll amount</li>
+<li class="">Review individual salary slips</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="processing-individual-employee">Processing Individual Employee<a href="#processing-individual-employee" class="hash-link" aria-label="Direct link to Processing Individual Employee" title="Direct link to Processing Individual Employee" translate="no">​</a></h3>
+<p>For mid-month joiners or corrections:</p>
+<ol>
+<li class="">Click <strong>💰 Process Payroll</strong></li>
+<li class="">Select employee</li>
+<li class="">Select month and year</li>
+<li class="">Enter days worked (if partial month)</li>
+<li class="">Click <strong>Process</strong></li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="reprocessing-payroll">Reprocessing Payroll<a href="#reprocessing-payroll" class="hash-link" aria-label="Direct link to Reprocessing Payroll" title="Direct link to Reprocessing Payroll" translate="no">​</a></h3>
+<p>If you need to reprocess:</p>
+<ol>
+<li class="">System will warn: &quot;Payroll already exists&quot;</li>
+<li class="">Click <strong>Yes</strong> to confirm</li>
+<li class="">Existing records will be updated</li>
+<li class="">Vouchers will be regenerated</li>
+</ol>
+<p><strong>⚠️ Warning:</strong> Reprocessing affects accounting vouchers. Coordinate with accounts team.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="leave-management">Leave Management<a href="#leave-management" class="hash-link" aria-label="Direct link to Leave Management" title="Direct link to Leave Management" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="setting-up-leave-balances">Setting Up Leave Balances<a href="#setting-up-leave-balances" class="hash-link" aria-label="Direct link to Setting Up Leave Balances" title="Direct link to Setting Up Leave Balances" translate="no">​</a></h3>
+<p><strong>For New Employees:</strong></p>
+<ol>
+<li class="">Click <strong>🏖️ Leave Management</strong></li>
+<li class="">Click <strong>Set Opening Balances</strong></li>
+<li class="">Select:<!-- -->
+<ul>
+<li class="">Employee</li>
+<li class="">Year (e.g., 2026)</li>
+<li class="">Leave Type (Earned Leave, Sick Leave, etc.)</li>
+</ul>
+</li>
+<li class="">Enter opening balance</li>
+<li class="">Click <strong>Save</strong></li>
+</ol>
+<p><strong>Typical Opening Balances:</strong></p>
+<ul>
+<li class="">Earned Leave: 15 days</li>
+<li class="">Sick Leave: 7 days</li>
+<li class="">Casual Leave: 7 days</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="monthly-leave-accrual">Monthly Leave Accrual<a href="#monthly-leave-accrual" class="hash-link" aria-label="Direct link to Monthly Leave Accrual" title="Direct link to Monthly Leave Accrual" translate="no">​</a></h3>
+<p>System automatically accrues leave monthly:</p>
+<ul>
+<li class="">Earned Leave: 1.25 days/month (15 days/year)</li>
+<li class="">Configure in database if different policy</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="processing-leave-requests">Processing Leave Requests<a href="#processing-leave-requests" class="hash-link" aria-label="Direct link to Processing Leave Requests" title="Direct link to Processing Leave Requests" translate="no">​</a></h3>
+<p><strong>Admin Approval:</strong></p>
+<ol>
+<li class="">Go to <strong>Leave Management</strong></li>
+<li class="">Click <strong>Pending Approvals</strong> tab</li>
+<li class="">Review request details:<!-- -->
+<ul>
+<li class="">Employee name</li>
+<li class="">Leave type</li>
+<li class="">From/To dates</li>
+<li class="">Number of days</li>
+<li class="">Reason</li>
+</ul>
+</li>
+<li class="">Click <strong>Approve</strong> or <strong>Reject</strong></li>
+<li class="">Add remarks (optional)</li>
+<li class="">Click <strong>Submit</strong></li>
+</ol>
+<p><strong>Employee Self-Application:</strong></p>
+<p>Employees can apply through <strong>Employee Portal</strong> (see section below).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="leave-reports">Leave Reports<a href="#leave-reports" class="hash-link" aria-label="Direct link to Leave Reports" title="Direct link to Leave Reports" translate="no">​</a></h3>
+<p><strong>Employee Leave Balance Report:</strong></p>
+<ol>
+<li class="">Click <strong>📊 Leave Balance Reports</strong></li>
+<li class="">Go to <strong>Leave Balances</strong> tab</li>
+<li class="">Select year</li>
+<li class="">Click <strong>Load Balances</strong></li>
+<li class="">View all employees&#x27; current balances</li>
+<li class="">Export to Excel if needed</li>
+</ol>
+<p><strong>Leave Usage Report:</strong></p>
+<ol>
+<li class="">Go to <strong>Leave Usage Report</strong> tab</li>
+<li class="">Select date range</li>
+<li class="">Click <strong>Generate Report</strong></li>
+<li class="">See month-wise leave consumption</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="attendance-management">Attendance Management<a href="#attendance-management" class="hash-link" aria-label="Direct link to Attendance Management" title="Direct link to Attendance Management" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="importing-attendance-from-excelcsv">Importing Attendance from Excel/CSV<a href="#importing-attendance-from-excelcsv" class="hash-link" aria-label="Direct link to Importing Attendance from Excel/CSV" title="Direct link to Importing Attendance from Excel/CSV" translate="no">​</a></h3>
+<p><strong>Step-by-Step:</strong></p>
+<ol>
+<li class=""><strong>Prepare Your File:</strong></li>
+</ol>
+<p>Example Excel format:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Employee ID | Date       | Status</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">101         | 01/01/2026 | Present</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">101         | 02/01/2026 | Absent</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">102         | 01/01/2026 | Present</span><br></span></code></pre></div></div>
+<p>Supported status values:</p>
+<ul>
+<li class="">Present, P, 1</li>
+<li class="">Absent, A, 0</li>
+<li class="">Half Day, HD, 0.5</li>
+<li class="">Leave, L</li>
+</ul>
+<ol start="2">
+<li class="">
+<p><strong>Import Process:</strong></p>
+<ul>
+<li class="">Click <strong>📥 Import Attendance</strong></li>
+<li class="">Click <strong>Browse File</strong></li>
+<li class="">Select your Excel/CSV file</li>
+<li class=""><strong>Preview</strong> shows first few rows</li>
+<li class=""><strong>Map Columns:</strong>
+<ul>
+<li class="">Employee ID Column → Select from dropdown</li>
+<li class="">Date Column → Select from dropdown</li>
+<li class="">Status Column → Select from dropdown</li>
+</ul>
+</li>
+<li class="">Click <strong>Import</strong></li>
+</ul>
+</li>
+<li class="">
+<p><strong>Review Results:</strong></p>
+<ul>
+<li class="">Success count</li>
+<li class="">Error count (if any)</li>
+<li class="">Error details</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="biometric-device-integration">Biometric Device Integration<a href="#biometric-device-integration" class="hash-link" aria-label="Direct link to Biometric Device Integration" title="Direct link to Biometric Device Integration" translate="no">​</a></h3>
+<p>Most biometric devices export to Excel/CSV. Common formats supported:</p>
+<p><strong>Format 1: Attendance Log</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Emp ID, Name, Date, In Time, Out Time</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">101, Rahul, 01/01/2026, 09:00, 18:00</span><br></span></code></pre></div></div>
+<p><strong>Format 2: Daily Summary</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Emp ID, Date, Status, Hours</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">101, 01/01/2026, P, 9.0</span><br></span></code></pre></div></div>
+<p><strong>Import Steps:</strong></p>
+<ol>
+<li class="">Export from biometric device</li>
+<li class="">Open in Excel</li>
+<li class="">Ensure columns: Employee ID, Date, Status</li>
+<li class="">Save as .xlsx or .csv</li>
+<li class="">Import using steps above</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="manual-attendance-entry">Manual Attendance Entry<a href="#manual-attendance-entry" class="hash-link" aria-label="Direct link to Manual Attendance Entry" title="Direct link to Manual Attendance Entry" translate="no">​</a></h3>
+<p>For small teams or corrections:</p>
+<ol>
+<li class="">Go to <strong>Leave Management</strong></li>
+<li class="">Mark leave as &quot;Approved&quot;</li>
+<li class="">System treats approved leave as attendance</li>
+<li class="">For absences: No entry needed (defaults to absent)</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="reports">Reports<a href="#reports" class="hash-link" aria-label="Direct link to Reports" title="Direct link to Reports" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="payroll-reports">Payroll Reports<a href="#payroll-reports" class="hash-link" aria-label="Direct link to Payroll Reports" title="Direct link to Payroll Reports" translate="no">​</a></h3>
+<p><strong>Monthly Payroll Report:</strong></p>
+<ol>
+<li class="">Click <strong>📊 Payroll Reports</strong></li>
+<li class="">Go to <strong>Monthly Report</strong> tab</li>
+<li class="">Select month and year</li>
+<li class="">Click <strong>Load Report</strong></li>
+<li class="">View:<!-- -->
+<ul>
+<li class="">Employee-wise salary breakdown</li>
+<li class="">Gross, deductions, net salary</li>
+<li class="">Total payroll cost</li>
+</ul>
+</li>
+<li class="">Export to Excel/CSV</li>
+</ol>
+<p><strong>Year-to-Date (YTD) Report:</strong></p>
+<ol>
+<li class="">Go to <strong>YTD Report</strong> tab</li>
+<li class="">Select year and month (up to)</li>
+<li class="">Click <strong>Load Report</strong></li>
+<li class="">Shows cumulative data from April to selected month</li>
+</ol>
+<p><strong>Annual Summary:</strong></p>
+<ol>
+<li class="">Go to <strong>Annual Summary</strong> tab</li>
+<li class="">Select financial year</li>
+<li class="">View complete year&#x27;s payroll data</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="leave-reports-1">Leave Reports<a href="#leave-reports-1" class="hash-link" aria-label="Direct link to Leave Reports" title="Direct link to Leave Reports" translate="no">​</a></h3>
+<p><strong>All Employee Leave Balances:</strong></p>
+<ol>
+<li class="">Click <strong>📊 Leave Balance Reports</strong></li>
+<li class="">Select year</li>
+<li class="">View opening, accrued, used, closing balances</li>
+<li class="">Export to Excel</li>
+</ol>
+<p><strong>Employee-Specific Leave Report:</strong></p>
+<ol>
+<li class="">Go to <strong>Employee Leave Report</strong> tab</li>
+<li class="">Select employee and year</li>
+<li class="">View detailed leave history</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="custom-reports">Custom Reports<a href="#custom-reports" class="hash-link" aria-label="Direct link to Custom Reports" title="Direct link to Custom Reports" translate="no">​</a></h3>
+<p><strong>Comparison Report:</strong></p>
+<ol>
+<li class="">Go to <strong>Comparison Report</strong> tab</li>
+<li class="">Select two months to compare</li>
+<li class="">View month-over-month changes</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tax-management">Tax Management<a href="#tax-management" class="hash-link" aria-label="Direct link to Tax Management" title="Direct link to Tax Management" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="employee-tax-declarations">Employee Tax Declarations<a href="#employee-tax-declarations" class="hash-link" aria-label="Direct link to Employee Tax Declarations" title="Direct link to Employee Tax Declarations" translate="no">​</a></h3>
+<p><strong>For Each Employee (Annual Process):</strong></p>
+<ol>
+<li class="">
+<p>Click <strong>💰 Tax &amp; Form 16</strong></p>
+</li>
+<li class="">
+<p>Go to <strong>Employee Tax Declarations</strong> tab</p>
+</li>
+<li class="">
+<p>Select employee</p>
+</li>
+<li class="">
+<p><strong>Choose Tax Regime:</strong></p>
+<ul>
+<li class=""><strong>New Regime</strong>: Lower rates, no deductions</li>
+<li class=""><strong>Old Regime</strong>: Higher rates, allows deductions</li>
+</ul>
+</li>
+<li class="">
+<p><strong>If Old Regime, Enter:</strong></p>
+<ul>
+<li class=""><strong>HRA Details:</strong>
+<ul>
+<li class="">Annual rent paid</li>
+<li class="">Check &quot;Metro City&quot; if applicable</li>
+</ul>
+</li>
+<li class=""><strong>Section 80C:</strong> PF, LIC, ELSS (max ₹1.5L)</li>
+<li class=""><strong>Section 80D:</strong> Health insurance (max ₹25K)</li>
+<li class=""><strong>Section 80G:</strong> Donations</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Other Income:</strong></p>
+<ul>
+<li class="">Interest income</li>
+<li class="">Rental income</li>
+<li class="">Previous employer income (if joined mid-year)</li>
+<li class="">Previous employer TDS</li>
+</ul>
+</li>
+<li class="">
+<p>Click <strong>Save Declaration</strong></p>
+</li>
+</ol>
+<p><strong>Best Practice:</strong> Collect declarations in April/May each year.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tax-calculator">Tax Calculator<a href="#tax-calculator" class="hash-link" aria-label="Direct link to Tax Calculator" title="Direct link to Tax Calculator" translate="no">​</a></h3>
+<p><strong>To Help Employees Choose Regime:</strong></p>
+<ol>
+<li class="">
+<p>Go to <strong>Tax Calculator</strong> tab</p>
+</li>
+<li class="">
+<p>Select employee</p>
+</li>
+<li class="">
+<p>Click <strong>Calculate Tax</strong></p>
+</li>
+<li class="">
+<p>View detailed breakdown:</p>
+<ul>
+<li class="">Gross income</li>
+<li class="">Deductions (if Old regime)</li>
+<li class="">Taxable income</li>
+<li class="">Tax liability</li>
+<li class="">Monthly TDS</li>
+</ul>
+</li>
+<li class="">
+<p>Compare Old vs New regime</p>
+</li>
+<li class="">
+<p>Recommend best option to employee</p>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="form-16-generation">Form 16 Generation<a href="#form-16-generation" class="hash-link" aria-label="Direct link to Form 16 Generation" title="Direct link to Form 16 Generation" translate="no">​</a></h3>
+<p><strong>Year-End Process (After March 31st):</strong></p>
+<ol>
+<li class="">Ensure all payroll processed for the year</li>
+<li class="">Verify all tax declarations saved</li>
+<li class="">Go to <strong>Generate Form 16</strong> tab</li>
+<li class="">Select:<!-- -->
+<ul>
+<li class="">Employee</li>
+<li class="">Financial Year (e.g., 2025-26)</li>
+</ul>
+</li>
+<li class="">Click <strong>Generate Form 16 PDF</strong></li>
+<li class="">PDF saved with password = Employee&#x27;s PAN</li>
+<li class="">Folder opens automatically</li>
+<li class="">Email Form 16 to employee</li>
+</ol>
+<p><strong>Form 16 Contains:</strong></p>
+<ul>
+<li class=""><strong>Part A:</strong> Quarterly TDS summary</li>
+<li class=""><strong>Part B:</strong> Salary computation, tax calculation</li>
+<li class=""><strong>Annexure:</strong> Month-wise salary and TDS details</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tds-deduction">TDS Deduction<a href="#tds-deduction" class="hash-link" aria-label="Direct link to TDS Deduction" title="Direct link to TDS Deduction" translate="no">​</a></h3>
+<p><strong>Automatic Process:</strong></p>
+<ul>
+<li class="">TDS calculated automatically during payroll processing</li>
+<li class="">Based on:<!-- -->
+<ul>
+<li class="">Annual projected income</li>
+<li class="">Tax regime selected</li>
+<li class="">Deductions claimed</li>
+<li class="">FY 2025-26 tax slabs</li>
+</ul>
+</li>
+<li class="">Distributed monthly across remaining months</li>
+<li class="">Shown in salary slip as &quot;Income Tax Deducted&quot;</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="year-end-processing">Year-End Processing<a href="#year-end-processing" class="hash-link" aria-label="Direct link to Year-End Processing" title="Direct link to Year-End Processing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="leave-carry-forward">Leave Carry-Forward<a href="#leave-carry-forward" class="hash-link" aria-label="Direct link to Leave Carry-Forward" title="Direct link to Leave Carry-Forward" translate="no">​</a></h3>
+<p><strong>Annual Process (March/April):</strong></p>
+<p><strong>Step 1: Configure Settings (One-time)</strong></p>
+<ol>
+<li class="">Click <strong>📅 Year-End Carry-Forward</strong></li>
+<li class="">Go to <strong>Carry-Forward Settings</strong> tab</li>
+<li class="">For each leave type:<!-- -->
+<ul>
+<li class="">Enable/disable carry-forward</li>
+<li class="">Set maximum days</li>
+</ul>
+</li>
+</ol>
+<p><strong>Recommended Settings:</strong></p>
+<ul>
+<li class="">Earned Leave: 15 days max ✅</li>
+<li class="">Sick Leave: 0 days (no carry-forward)</li>
+<li class="">Casual Leave: 0 days (no carry-forward)</li>
+</ul>
+<ol start="4">
+<li class="">Click <strong>Save Settings</strong></li>
+</ol>
+<p><strong>Step 2: Year-End Processing</strong></p>
+<ol>
+<li class="">Go to <strong>Year-End Processing</strong> tab</li>
+<li class="">Select:<!-- -->
+<ul>
+<li class="">From year: 2025</li>
+<li class="">To year: 2026</li>
+</ul>
+</li>
+<li class="">Click <strong>Preview Carry-Forward</strong></li>
+<li class=""><strong>Review Preview:</strong>
+<ul>
+<li class="">Employee-wise breakdown</li>
+<li class="">Days carried forward</li>
+<li class="">Days lapsed</li>
+<li class="">Total summary</li>
+</ul>
+</li>
+<li class="">If satisfied, click <strong>Process Carry-Forward</strong></li>
+<li class="">Confirm action</li>
+<li class="">System creates next year&#x27;s opening balances</li>
+</ol>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Employee: Rahul Kumar</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Earned Leave Balance (2025): 20 days</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Max Carry-Forward: 15 days</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Result:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  - Carried to 2026: 15 days ✅</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  - Lapsed: 5 days ❌</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="financial-year-closing">Financial Year Closing<a href="#financial-year-closing" class="hash-link" aria-label="Direct link to Financial Year Closing" title="Direct link to Financial Year Closing" translate="no">​</a></h3>
+<p><strong>Checklist:</strong></p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Process December payroll</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Process January-March payroll</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Generate all Form 16s</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Process leave carry-forward</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Generate annual reports</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Backup database</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Archive payroll documents</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="employee-self-service-portal">Employee Self-Service Portal<a href="#employee-self-service-portal" class="hash-link" aria-label="Direct link to Employee Self-Service Portal" title="Direct link to Employee Self-Service Portal" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="admin-setup">Admin Setup<a href="#admin-setup" class="hash-link" aria-label="Direct link to Admin Setup" title="Direct link to Admin Setup" translate="no">​</a></h3>
+<p><strong>Setting Employee Passwords:</strong></p>
+<ol>
+<li class="">Click <strong>🏢 Employee Portal</strong></li>
+<li class="">Click <strong>Manage Employee Access</strong></li>
+<li class="">Select employee</li>
+<li class="">Click <strong>Set Password</strong></li>
+<li class="">Enter password (or auto-generate)</li>
+<li class="">Click <strong>Save</strong></li>
+<li class="">Share credentials with employee</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="employee-login">Employee Login<a href="#employee-login" class="hash-link" aria-label="Direct link to Employee Login" title="Direct link to Employee Login" translate="no">​</a></h3>
+<p><strong>For Employees:</strong></p>
+<ol>
+<li class="">Admin clicks <strong>🏢 Employee Portal</strong> → <strong>Launch Portal</strong></li>
+<li class="">Employee enters:<!-- -->
+<ul>
+<li class="">Employee ID</li>
+<li class="">Password</li>
+</ul>
+</li>
+<li class="">Click <strong>Login</strong></li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="portal-features">Portal Features<a href="#portal-features" class="hash-link" aria-label="Direct link to Portal Features" title="Direct link to Portal Features" translate="no">​</a></h3>
+<p><strong>Dashboard Tabs:</strong></p>
+<p><strong>1. Salary Slips:</strong></p>
+<ul>
+<li class="">View all salary slips</li>
+<li class="">Select month/year</li>
+<li class="">View HTML slip</li>
+<li class="">Download PDF (password: Employee ID)</li>
+</ul>
+<p><strong>2. Leave Balance:</strong></p>
+<ul>
+<li class="">View current leave balances</li>
+<li class="">See opening, accrued, used, closing</li>
+<li class="">Visual cards for each leave type</li>
+</ul>
+<p><strong>3. Apply Leave:</strong></p>
+<ul>
+<li class="">Select leave type</li>
+<li class="">Choose from/to dates</li>
+<li class="">Enter reason</li>
+<li class="">Submit request</li>
+<li class="">Admin receives for approval</li>
+</ul>
+<p><strong>4. Attendance Records:</strong></p>
+<ul>
+<li class="">View monthly attendance</li>
+<li class="">See present/absent days</li>
+<li class="">Month-wise summary</li>
+</ul>
+<p><strong>5. Profile:</strong></p>
+<ul>
+<li class="">View personal details</li>
+<li class="">Contact information</li>
+<li class="">Bank details</li>
+<li class="">PAN, UAN</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-features">Advanced Features<a href="#advanced-features" class="hash-link" aria-label="Direct link to Advanced Features" title="Direct link to Advanced Features" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="custom-allowancededuction-templates">Custom Allowance/Deduction Templates<a href="#custom-allowancededuction-templates" class="hash-link" aria-label="Direct link to Custom Allowance/Deduction Templates" title="Direct link to Custom Allowance/Deduction Templates" translate="no">​</a></h3>
+<p><strong>Creating Templates:</strong></p>
+<ol>
+<li class="">Click <strong>📋 Templates</strong></li>
+<li class="">Click <strong>Create Template</strong></li>
+<li class="">Enter template name</li>
+<li class="">Add multiple allowances/deductions:<!-- -->
+<ul>
+<li class="">Name</li>
+<li class="">Amount</li>
+<li class="">Type (Fixed/Percentage/One-time)</li>
+</ul>
+</li>
+<li class="">Click <strong>Save Template</strong></li>
+</ol>
+<p><strong>Applying Templates:</strong></p>
+<ol>
+<li class="">Select template from list</li>
+<li class="">Click <strong>Apply to Employees</strong></li>
+<li class="">Select employees (or Select All)</li>
+<li class="">Click <strong>Apply</strong></li>
+<li class="">Allowances/deductions added to selected employees</li>
+</ol>
+<p><strong>Use Cases:</strong></p>
+<ul>
+<li class="">Standard allowances for all employees</li>
+<li class="">Department-specific allowances</li>
+<li class="">Grade-based deductions</li>
+<li class="">One-time bonuses</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="automatic-payroll-reminders">Automatic Payroll Reminders<a href="#automatic-payroll-reminders" class="hash-link" aria-label="Direct link to Automatic Payroll Reminders" title="Direct link to Automatic Payroll Reminders" translate="no">​</a></h3>
+<p><strong>Setup:</strong></p>
+<ol>
+<li class="">Click <strong>⏰ Reminders</strong></li>
+<li class="">Enable <strong>Payroll Reminders</strong></li>
+<li class="">Configure:<!-- -->
+<ul>
+<li class="">Reminder day (e.g., 25th of each month)</li>
+<li class="">Recipient emails (HR, Accounts)</li>
+<li class="">Email subject and message</li>
+</ul>
+</li>
+<li class="">Click <strong>Save Settings</strong></li>
+</ol>
+<p><strong>How It Works:</strong></p>
+<ul>
+<li class="">System runs daily at 9 AM</li>
+<li class="">Checks if payroll processed for current month</li>
+<li class="">If not, sends reminder email</li>
+<li class="">Stops after payroll is processed</li>
+</ul>
+<p><strong>Test Reminder:</strong></p>
+<ul>
+<li class="">Click <strong>Send Test Reminder</strong> to verify email</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bulk-salary-slip-sharing">Bulk Salary Slip Sharing<a href="#bulk-salary-slip-sharing" class="hash-link" aria-label="Direct link to Bulk Salary Slip Sharing" title="Direct link to Bulk Salary Slip Sharing" translate="no">​</a></h3>
+<p><strong>Email All Employees:</strong></p>
+<ol>
+<li class="">Click <strong>📧 Share Salary Slips</strong></li>
+<li class="">Select month and year</li>
+<li class="">Check <strong>Select All</strong></li>
+<li class="">Click <strong>Bulk Email</strong></li>
+<li class="">System sends individual emails to all employees</li>
+<li class="">Progress bar shows status</li>
+</ol>
+<p><strong>WhatsApp Sharing:</strong></p>
+<ol>
+<li class="">Same as email</li>
+<li class="">Click <strong>Bulk WhatsApp</strong></li>
+<li class="">Opens WhatsApp Web for each employee</li>
+<li class="">You need to click &quot;Send&quot; for each (WhatsApp limitation)</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tips--best-practices">Tips &amp; Best Practices<a href="#tips--best-practices" class="hash-link" aria-label="Direct link to Tips &amp; Best Practices" title="Direct link to Tips &amp; Best Practices" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="monthly-workflow">Monthly Workflow<a href="#monthly-workflow" class="hash-link" aria-label="Direct link to Monthly Workflow" title="Direct link to Monthly Workflow" translate="no">​</a></h3>
+<p><strong>Recommended Timeline:</strong></p>
+<table><thead><tr><th>Day</th><th>Activity</th></tr></thead><tbody><tr><td>1-5</td><td>Import attendance for previous month</td></tr><tr><td>5-10</td><td>Process leave requests</td></tr><tr><td>20-25</td><td>Review salary changes, additions</td></tr><tr><td>25-28</td><td>Process bulk payroll</td></tr><tr><td>28-30</td><td>Review salary slips, reports</td></tr><tr><td>30-31</td><td>Email salary slips to employees</td></tr><tr><td>Month-end</td><td>Generate and archive reports</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="data-backup">Data Backup<a href="#data-backup" class="hash-link" aria-label="Direct link to Data Backup" title="Direct link to Data Backup" translate="no">​</a></h3>
+<p><strong>Critical:</strong></p>
+<ul>
+<li class="">Backup <code>database</code> folder daily during payroll month</li>
+<li class="">Weekly backups during normal operations</li>
+<li class="">Before year-end processing</li>
+<li class="">Before any bulk operations</li>
+</ul>
+<p><strong>How to Backup:</strong></p>
+<ol>
+<li class="">Close application</li>
+<li class="">Copy entire <code>database</code> folder</li>
+<li class="">Rename with date: <code>database_backup_2026-01-31</code></li>
+<li class="">Store in safe location (cloud/external drive)</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="security-best-practices">Security Best Practices<a href="#security-best-practices" class="hash-link" aria-label="Direct link to Security Best Practices" title="Direct link to Security Best Practices" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Password-protect salary slips</strong> ✅ (automatic)</li>
+<li class=""><strong>Limit access</strong> to payroll system</li>
+<li class=""><strong>Regular backups</strong> of database</li>
+<li class=""><strong>Secure email</strong> configuration (use app passwords)</li>
+<li class=""><strong>Employee portal</strong> passwords should be strong</li>
+<li class=""><strong>Regular audits</strong> of payroll data</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-optimization">Performance Optimization<a href="#performance-optimization" class="hash-link" aria-label="Direct link to Performance Optimization" title="Direct link to Performance Optimization" translate="no">​</a></h3>
+<p><strong>For Large Employee Counts (100+):</strong></p>
+<ol>
+<li class="">Process payroll during off-peak hours</li>
+<li class="">Close unnecessary applications</li>
+<li class="">Ensure 4GB+ RAM available</li>
+<li class="">Consider batch processing (50 employees at a time)</li>
+<li class="">Regular database maintenance</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-issues">Common Issues<a href="#common-issues" class="hash-link" aria-label="Direct link to Common Issues" title="Direct link to Common Issues" translate="no">​</a></h3>
+<p><strong>Issue: Email not sending</strong></p>
+<ul>
+<li class="">Check SMTP settings</li>
+<li class="">Verify internet connection</li>
+<li class="">For Gmail: Use App Password, not regular password</li>
+<li class="">Test with <strong>Test Email</strong> button</li>
+</ul>
+<p><strong>Issue: PDF generation fails</strong></p>
+<ul>
+<li class="">Ensure WeasyPrint installed: <code>pip install weasyprint</code></li>
+<li class="">Check if company logo path is correct</li>
+<li class="">Verify sufficient disk space</li>
+</ul>
+<p><strong>Issue: Portal login fails</strong></p>
+<ul>
+<li class="">Verify password is set for employee</li>
+<li class="">Check if employee ID is correct (case-sensitive)</li>
+<li class="">Ensure employee is active</li>
+</ul>
+<p><strong>Issue: Reports show no data</strong></p>
+<ul>
+<li class="">Verify payroll is processed for selected period</li>
+<li class="">Check date range selection</li>
+<li class="">Refresh report</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-help">Getting Help<a href="#getting-help" class="hash-link" aria-label="Direct link to Getting Help" title="Direct link to Getting Help" translate="no">​</a></h3>
+<ol>
+<li class="">Check <a class="" href="/open-rpsaccounting/docs/guides/PAYROLL_FAQ.md">FAQ</a></li>
+<li class="">Review error messages in terminal</li>
+<li class="">Check system logs</li>
+<li class="">Contact IT support with:<!-- -->
+<ul>
+<li class="">Steps to reproduce</li>
+<li class="">Screenshots</li>
+<li class="">Error messages</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="appendix">Appendix<a href="#appendix" class="hash-link" aria-label="Direct link to Appendix" title="Direct link to Appendix" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tax-slabs-fy-2025-26">Tax Slabs (FY 2025-26)<a href="#tax-slabs-fy-2025-26" class="hash-link" aria-label="Direct link to Tax Slabs (FY 2025-26)" title="Direct link to Tax Slabs (FY 2025-26)" translate="no">​</a></h3>
+<p><strong>New Regime:</strong></p>
+<table><thead><tr><th>Income Range</th><th>Tax Rate</th></tr></thead><tbody><tr><td>₹0 - ₹3,00,000</td><td>0%</td></tr><tr><td>₹3,00,001 - ₹7,00,000</td><td>5%</td></tr><tr><td>₹7,00,001 - ₹10,00,000</td><td>10%</td></tr><tr><td>₹10,00,001 - ₹12,00,000</td><td>15%</td></tr><tr><td>₹12,00,001 - ₹15,00,000</td><td>20%</td></tr><tr><td>Above ₹15,00,000</td><td>30%</td></tr></tbody></table>
+<p><strong>Old Regime:</strong></p>
+<table><thead><tr><th>Income Range</th><th>Tax Rate</th></tr></thead><tbody><tr><td>₹0 - ₹2,50,000</td><td>0%</td></tr><tr><td>₹2,50,001 - ₹5,00,000</td><td>5%</td></tr><tr><td>₹5,00,001 - ₹10,00,000</td><td>20%</td></tr><tr><td>Above ₹10,00,000</td><td>30%</td></tr></tbody></table>
+<p>Plus 4% Health &amp; Education Cess on tax amount.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="professional-tax-maharashtra">Professional Tax (Maharashtra)<a href="#professional-tax-maharashtra" class="hash-link" aria-label="Direct link to Professional Tax (Maharashtra)" title="Direct link to Professional Tax (Maharashtra)" translate="no">​</a></h3>
+<table><thead><tr><th>Monthly Gross Salary</th><th>PT Amount</th></tr></thead><tbody><tr><td>Up to ₹7,500</td><td>₹0</td></tr><tr><td>₹7,501 - ₹10,000</td><td>₹175</td></tr><tr><td>Above ₹10,000</td><td>₹200</td></tr></tbody></table>
+<p>Maximum annual PT: ₹2,500</p>
+<hr>
+<p><strong>Document Version:</strong> 1.0<br>
+<strong>Last Updated:</strong> February 2026<br>
+<strong>For Support:</strong> Contact your system administrator</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guides/USER_GUIDE.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/open-rpsaccounting/docs/guides/TALLY_ODBC_SETUP"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Tally ODBC Setup Guide</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/open-rpsaccounting/docs"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">RPS Accounting - Documentation Index</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-table-of-contents" class="table-of-contents__link toc-highlight">📋 Table of Contents</a></li><li><a href="#introduction" class="table-of-contents__link toc-highlight">Introduction</a><ul><li><a href="#what-is-the-payroll-system" class="table-of-contents__link toc-highlight">What is the Payroll System?</a></li><li><a href="#key-features" class="table-of-contents__link toc-highlight">Key Features</a></li></ul></li><li><a href="#getting-started" class="table-of-contents__link toc-highlight">Getting Started</a><ul><li><a href="#installation--setup" class="table-of-contents__link toc-highlight">Installation &amp; Setup</a></li><li><a href="#first-time-setup" class="table-of-contents__link toc-highlight">First-Time Setup</a></li></ul></li><li><a href="#employee-management" class="table-of-contents__link toc-highlight">Employee Management</a><ul><li><a href="#adding-a-new-employee" class="table-of-contents__link toc-highlight">Adding a New Employee</a></li><li><a href="#adding-allowances--deductions" class="table-of-contents__link toc-highlight">Adding Allowances &amp; Deductions</a></li><li><a href="#editing-employee-details" class="table-of-contents__link toc-highlight">Editing Employee Details</a></li><li><a href="#deactivating-employees" class="table-of-contents__link toc-highlight">Deactivating Employees</a></li></ul></li><li><a href="#payroll-processing" class="table-of-contents__link toc-highlight">Payroll Processing</a><ul><li><a href="#monthly-payroll-processing-recommended-method" class="table-of-contents__link toc-highlight">Monthly Payroll Processing (Recommended Method)</a></li><li><a href="#processing-individual-employee" class="table-of-contents__link toc-highlight">Processing Individual Employee</a></li><li><a href="#reprocessing-payroll" class="table-of-contents__link toc-highlight">Reprocessing Payroll</a></li></ul></li><li><a href="#leave-management" class="table-of-contents__link toc-highlight">Leave Management</a><ul><li><a href="#setting-up-leave-balances" class="table-of-contents__link toc-highlight">Setting Up Leave Balances</a></li><li><a href="#monthly-leave-accrual" class="table-of-contents__link toc-highlight">Monthly Leave Accrual</a></li><li><a href="#processing-leave-requests" class="table-of-contents__link toc-highlight">Processing Leave Requests</a></li><li><a href="#leave-reports" class="table-of-contents__link toc-highlight">Leave Reports</a></li></ul></li><li><a href="#attendance-management" class="table-of-contents__link toc-highlight">Attendance Management</a><ul><li><a href="#importing-attendance-from-excelcsv" class="table-of-contents__link toc-highlight">Importing Attendance from Excel/CSV</a></li><li><a href="#biometric-device-integration" class="table-of-contents__link toc-highlight">Biometric Device Integration</a></li><li><a href="#manual-attendance-entry" class="table-of-contents__link toc-highlight">Manual Attendance Entry</a></li></ul></li><li><a href="#reports" class="table-of-contents__link toc-highlight">Reports</a><ul><li><a href="#payroll-reports" class="table-of-contents__link toc-highlight">Payroll Reports</a></li><li><a href="#leave-reports-1" class="table-of-contents__link toc-highlight">Leave Reports</a></li><li><a href="#custom-reports" class="table-of-contents__link toc-highlight">Custom Reports</a></li></ul></li><li><a href="#tax-management" class="table-of-contents__link toc-highlight">Tax Management</a><ul><li><a href="#employee-tax-declarations" class="table-of-contents__link toc-highlight">Employee Tax Declarations</a></li><li><a href="#tax-calculator" class="table-of-contents__link toc-highlight">Tax Calculator</a></li><li><a href="#form-16-generation" class="table-of-contents__link toc-highlight">Form 16 Generation</a></li><li><a href="#tds-deduction" class="table-of-contents__link toc-highlight">TDS Deduction</a></li></ul></li><li><a href="#year-end-processing" class="table-of-contents__link toc-highlight">Year-End Processing</a><ul><li><a href="#leave-carry-forward" class="table-of-contents__link toc-highlight">Leave Carry-Forward</a></li><li><a href="#financial-year-closing" class="table-of-contents__link toc-highlight">Financial Year Closing</a></li></ul></li><li><a href="#employee-self-service-portal" class="table-of-contents__link toc-highlight">Employee Self-Service Portal</a><ul><li><a href="#admin-setup" class="table-of-contents__link toc-highlight">Admin Setup</a></li><li><a href="#employee-login" class="table-of-contents__link toc-highlight">Employee Login</a></li><li><a href="#portal-features" class="table-of-contents__link toc-highlight">Portal Features</a></li></ul></li><li><a href="#advanced-features" class="table-of-contents__link toc-highlight">Advanced Features</a><ul><li><a href="#custom-allowancededuction-templates" class="table-of-contents__link toc-highlight">Custom Allowance/Deduction Templates</a></li><li><a href="#automatic-payroll-reminders" class="table-of-contents__link toc-highlight">Automatic Payroll Reminders</a></li><li><a href="#bulk-salary-slip-sharing" class="table-of-contents__link toc-highlight">Bulk Salary Slip Sharing</a></li></ul></li><li><a href="#tips--best-practices" class="table-of-contents__link toc-highlight">Tips &amp; Best Practices</a><ul><li><a href="#monthly-workflow" class="table-of-contents__link toc-highlight">Monthly Workflow</a></li><li><a href="#data-backup" class="table-of-contents__link toc-highlight">Data Backup</a></li><li><a href="#security-best-practices" class="table-of-contents__link toc-highlight">Security Best Practices</a></li><li><a href="#performance-optimization" class="table-of-contents__link toc-highlight">Performance Optimization</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#common-issues" class="table-of-contents__link toc-highlight">Common Issues</a></li><li><a href="#getting-help" class="table-of-contents__link toc-highlight">Getting Help</a></li></ul></li><li><a href="#appendix" class="table-of-contents__link toc-highlight">Appendix</a><ul><li><a href="#tax-slabs-fy-2025-26" class="table-of-contents__link toc-highlight">Tax Slabs (FY 2025-26)</a></li><li><a href="#professional-tax-maharashtra" class="table-of-contents__link toc-highlight">Professional Tax (Maharashtra)</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/open-rpsaccounting/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/open-rpsaccounting/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/rahulnkvaidya/open-rpsaccounting" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 RPS accounting. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

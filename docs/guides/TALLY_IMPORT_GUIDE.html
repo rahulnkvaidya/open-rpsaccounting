@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-guides/TALLY_IMPORT_GUIDE" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Tally Import User Guide | RPS accounting</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://rahulnkvaidya.github.io/open-rpsaccounting/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://rahulnkvaidya.github.io/open-rpsaccounting/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/TALLY_IMPORT_GUIDE"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Tally Import User Guide | RPS accounting"><meta data-rh="true" name="description" content="Tally se RPS Accounting mein Data Import Kaise Kare"><meta data-rh="true" property="og:description" content="Tally se RPS Accounting mein Data Import Kaise Kare"><link data-rh="true" rel="icon" href="/open-rpsaccounting/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/TALLY_IMPORT_GUIDE"><link data-rh="true" rel="alternate" href="https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/TALLY_IMPORT_GUIDE" hreflang="en"><link data-rh="true" rel="alternate" href="https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/TALLY_IMPORT_GUIDE" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tally Import User Guide","item":"https://rahulnkvaidya.github.io/open-rpsaccounting/docs/guides/TALLY_IMPORT_GUIDE"}]}</script><link rel="alternate" type="application/rss+xml" href="/open-rpsaccounting/blog/rss.xml" title="RPS accounting RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/open-rpsaccounting/blog/atom.xml" title="RPS accounting Atom Feed"><link rel="stylesheet" href="/open-rpsaccounting/assets/css/styles.c51ffe61.css">
+<script src="/open-rpsaccounting/assets/js/runtime~main.be7b93fc.js" defer="defer"></script>
+<script src="/open-rpsaccounting/assets/js/main.9c1ef168.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/open-rpsaccounting/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/open-rpsaccounting/"><div class="navbar__logo"><img src="/open-rpsaccounting/img/logo.svg" alt="RPS accounting Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/open-rpsaccounting/img/logo.svg" alt="RPS accounting Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">RPS accounting</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/open-rpsaccounting/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/open-rpsaccounting/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/rahulnkvaidya/open-rpsaccounting" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/open-rpsaccounting/docs/intro"><span title="Tutorial Intro" class="linkLabel_WmDU">Tutorial Intro</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/open-rpsaccounting/docs/category/tutorial---basics"><span title="Tutorial - Basics" class="categoryLinkLabel_W154">Tutorial - Basics</span></a><button aria-label="Expand sidebar category &#x27;Tutorial - Basics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/open-rpsaccounting/docs/category/tutorial---extras"><span title="Tutorial - Extras" class="categoryLinkLabel_W154">Tutorial - Extras</span></a><button aria-label="Expand sidebar category &#x27;Tutorial - Extras&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/open-rpsaccounting/docs/faq/PAYROLL_FAQ"><span title="faq" class="categoryLinkLabel_W154">faq</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/open-rpsaccounting/docs/guides/KEYBOARD_SHORTCUTS"><span title="guides" class="categoryLinkLabel_W154">guides</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-rpsaccounting/docs/guides/KEYBOARD_SHORTCUTS"><span title="RPS Accounting - Keyboard Shortcuts Reference" class="linkLabel_WmDU">RPS Accounting - Keyboard Shortcuts Reference</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/open-rpsaccounting/docs/guides/TALLY_IMPORT_GUIDE"><span title="Tally Import User Guide" class="linkLabel_WmDU">Tally Import User Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-rpsaccounting/docs/guides/TALLY_ODBC_SETUP"><span title="Tally ODBC Setup Guide" class="linkLabel_WmDU">Tally ODBC Setup Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/open-rpsaccounting/docs/guides/USER_GUIDE"><span title="Payroll System - Complete User Guide" class="linkLabel_WmDU">Payroll System - Complete User Guide</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/open-rpsaccounting/docs"><span title="RPS Accounting - Documentation Index" class="linkLabel_WmDU">RPS Accounting - Documentation Index</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/open-rpsaccounting/docs/tutorials/GMAIL_SETUP"><span title="tutorials" class="categoryLinkLabel_W154">tutorials</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/open-rpsaccounting/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">guides</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Tally Import User Guide</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Tally Import User Guide</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tally-se-rps-accounting-mein-data-import-kaise-kare">Tally se RPS Accounting mein Data Import Kaise Kare<a href="#tally-se-rps-accounting-mein-data-import-kaise-kare" class="hash-link" aria-label="Direct link to Tally se RPS Accounting mein Data Import Kaise Kare" title="Direct link to Tally se RPS Accounting mein Data Import Kaise Kare" translate="no">​</a></h2>
+<p>Is guide se aap Tally accounting software se RPS Accounting mein apna data easily import kar sakte hain.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-tally-se-data-export-karen">Step 1: Tally se Data Export Karen<a href="#step-1-tally-se-data-export-karen" class="hash-link" aria-label="Direct link to Step 1: Tally se Data Export Karen" title="Direct link to Step 1: Tally se Data Export Karen" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ledgers-export-karne-ke-liye">Ledgers Export Karne Ke Liye:<a href="#ledgers-export-karne-ke-liye" class="hash-link" aria-label="Direct link to Ledgers Export Karne Ke Liye:" title="Direct link to Ledgers Export Karne Ke Liye:" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Tally Software</strong> open karen</li>
+<li class=""><strong>Gateway of Tally</strong> se:<!-- -->
+<ul>
+<li class=""><strong>Display</strong> → <strong>Account Books</strong> → <strong>List of Accounts</strong> pe jaayein</li>
+</ul>
+</li>
+<li class=""><strong>Alt + E</strong> press karein (Export option)</li>
+<li class=""><strong>Excel</strong> format select karein</li>
+<li class="">File save karen (e.g., <code>tally_ledgers.xlsx</code>)</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vouchersdaybook-export-karne-ke-liye">Vouchers/Daybook Export Karne Ke Liye:<a href="#vouchersdaybook-export-karne-ke-liye" class="hash-link" aria-label="Direct link to Vouchers/Daybook Export Karne Ke Liye:" title="Direct link to Vouchers/Daybook Export Karne Ke Liye:" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Gateway of Tally</strong> se:<!-- -->
+<ul>
+<li class=""><strong>Display</strong> → <strong>Day Book</strong> pe jaayein</li>
+</ul>
+</li>
+<li class="">Date range select karen (jitne transactions chahiye)</li>
+<li class=""><strong>Alt + E</strong> press karein (Export option)</li>
+<li class=""><strong>Excel</strong> format select karein</li>
+<li class="">File save karen (e.g., <code>tally_daybook.xlsx</code>)</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-rps-accounting-mein-import-karen">Step 2: RPS Accounting mein Import Karen<a href="#step-2-rps-accounting-mein-import-karen" class="hash-link" aria-label="Direct link to Step 2: RPS Accounting mein Import Karen" title="Direct link to Step 2: RPS Accounting mein Import Karen" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rps-accounting-application-open-karen">RPS Accounting Application Open Karen<a href="#rps-accounting-application-open-karen" class="hash-link" aria-label="Direct link to RPS Accounting Application Open Karen" title="Direct link to RPS Accounting Application Open Karen" translate="no">​</a></h3>
+<ol>
+<li class="">RPS Accounting software start karen</li>
+<li class="">Apni company select karen</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ledgers-import-karen">Ledgers Import Karen<a href="#ledgers-import-karen" class="hash-link" aria-label="Direct link to Ledgers Import Karen" title="Direct link to Ledgers Import Karen" translate="no">​</a></h3>
+<ol>
+<li class="">Menu se <strong>Settings</strong> → <strong>Import/Export</strong> pe jaayein</li>
+<li class=""><strong>Import from Tally (Excel)</strong> button click karen (orange color)</li>
+<li class=""><strong>Import Ledgers from Tally Excel</strong> option select karen</li>
+<li class="">Apni Excel file select karen (<code>tally_ledgers.xlsx</code>)</li>
+<li class="">Import process start ho jayega</li>
+<li class="">Success message dikhayi dega: &quot;Successfully imported: X&quot;</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vouchers-import-karen">Vouchers Import Karen<a href="#vouchers-import-karen" class="hash-link" aria-label="Direct link to Vouchers Import Karen" title="Direct link to Vouchers Import Karen" translate="no">​</a></h3>
+<ol>
+<li class="">Menu se <strong>Settings</strong> → <strong>Import/Export</strong> pe jaayein</li>
+<li class=""><strong>Import from Tally (Excel)</strong> button click karen</li>
+<li class=""><strong>Import Vouchers from Tally Excel</strong> option select karen</li>
+<li class="">Apni Excel file select karen (<code>tally_daybook.xlsx</code>)</li>
+<li class="">Import process start ho jayega</li>
+<li class="">Success message dikhayi dega</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="important-notes">Important Notes<a href="#important-notes" class="hash-link" aria-label="Direct link to Important Notes" title="Direct link to Important Notes" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-kya-support-karta-hai">✅ Kya Support Karta Hai:<a href="#-kya-support-karta-hai" class="hash-link" aria-label="Direct link to ✅ Kya Support Karta Hai:" title="Direct link to ✅ Kya Support Karta Hai:" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Ledgers</strong> - All ledgers with opening balance</li>
+<li class=""><strong>Vouchers</strong> - Payment, Receipt, Journal, Contra, Sales, Purchase</li>
+<li class=""><strong>Auto-creation</strong> - Agar ledger ya group missing hai, automatically create ho jayega</li>
+<li class=""><strong>Validation</strong> - Import se pehle data validate hota hai</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-dhyan-dene-waali-baatein">⚠️ Dhyan Dene Waali Baatein:<a href="#️-dhyan-dene-waali-baatein" class="hash-link" aria-label="Direct link to ⚠️ Dhyan Dene Waali Baatein:" title="Direct link to ⚠️ Dhyan Dene Waali Baatein:" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Backup</strong> - Import se pehle apna database backup le len</li>
+<li class=""><strong>Small Test</strong> - Pehle 5-10 ledgers/vouchers se test karen</li>
+<li class=""><strong>Date Format</strong> - Dates proper format mein honi chahiye</li>
+<li class=""><strong>Duplicate Names</strong> - Agar ledger already exist karta hai, skip ho jayega</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-excel-format-requirements">📋 Excel Format Requirements:<a href="#-excel-format-requirements" class="hash-link" aria-label="Direct link to 📋 Excel Format Requirements:" title="Direct link to 📋 Excel Format Requirements:" translate="no">​</a></h3>
+<p><strong>Ledgers Excel File:</strong></p>
+<ul>
+<li class="">Columns: Name, Group, Opening Balance, Dr/Cr</li>
+<li class="">Headers automatically detect honge</li>
+</ul>
+<p><strong>Vouchers Excel File:</strong></p>
+<ul>
+<li class="">Columns: Date, Voucher Type, Particulars, Debit, Credit, Narration</li>
+<li class="">System automatically vouchers group karega</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="verification-steps">Verification Steps<a href="#verification-steps" class="hash-link" aria-label="Direct link to Verification Steps" title="Direct link to Verification Steps" translate="no">​</a></h2>
+<p>Import ke baad verify karen:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-ledgers-check-karen">1. Ledgers Check Karen<a href="#1-ledgers-check-karen" class="hash-link" aria-label="Direct link to 1. Ledgers Check Karen" title="Direct link to 1. Ledgers Check Karen" translate="no">​</a></h3>
+<p><strong>Reports</strong> → <strong>Trial Balance</strong> → Verify that:</p>
+<ul>
+<li class="">All ledgers imported successfully</li>
+<li class="">Opening balances match with Tally</li>
+<li class="">Total Debit = Total Credit</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-vouchers-check-karen">2. Vouchers Check Karen<a href="#2-vouchers-check-karen" class="hash-link" aria-label="Direct link to 2. Vouchers Check Karen" title="Direct link to 2. Vouchers Check Karen" translate="no">​</a></h3>
+<p><strong>Reports</strong> → <strong>Day Book</strong> → Verify that:</p>
+<ul>
+<li class="">All vouchers imported</li>
+<li class="">Dates are correct</li>
+<li class="">Amounts match with Tally</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-individual-ledger-check">3. Individual Ledger Check<a href="#3-individual-ledger-check" class="hash-link" aria-label="Direct link to 3. Individual Ledger Check" title="Direct link to 3. Individual Ledger Check" translate="no">​</a></h3>
+<p><strong>Reports</strong> → <strong>Ledger Report</strong> → Select any ledger:</p>
+<ul>
+<li class="">Check transactions</li>
+<li class="">Verify closing balance</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-no-data-found">Problem: &quot;No Data Found&quot;<a href="#problem-no-data-found" class="hash-link" aria-label="Direct link to Problem: &quot;No Data Found&quot;" title="Direct link to Problem: &quot;No Data Found&quot;" translate="no">​</a></h3>
+<p><strong>Solution:</strong></p>
+<ul>
+<li class="">Excel file check karen - proper format mein hai?</li>
+<li class="">Headers (column names) check karen</li>
+<li class="">Pehli row mein data hai ya header hai?</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-validation-errors">Problem: &quot;Validation Errors&quot;<a href="#problem-validation-errors" class="hash-link" aria-label="Direct link to Problem: &quot;Validation Errors&quot;" title="Direct link to Problem: &quot;Validation Errors&quot;" translate="no">​</a></h3>
+<p><strong>Solution:</strong></p>
+<ul>
+<li class="">Error message padhen - kaunsi row mein problem hai</li>
+<li class="">Excel file ko manually check karen</li>
+<li class="">Empty rows delete karen</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-group-not-found">Problem: &quot;Group Not Found&quot;<a href="#problem-group-not-found" class="hash-link" aria-label="Direct link to Problem: &quot;Group Not Found&quot;" title="Direct link to Problem: &quot;Group Not Found&quot;" translate="no">​</a></h3>
+<p><strong>Solution:</strong></p>
+<ul>
+<li class="">Tally se pehle Groups export karen</li>
+<li class="">Ya manually RPS Accounting mein groups create karen</li>
+<li class="">System automatically Suspense group use karega</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-unbalanced-vouchers">Problem: &quot;Unbalanced Vouchers&quot;<a href="#problem-unbalanced-vouchers" class="hash-link" aria-label="Direct link to Problem: &quot;Unbalanced Vouchers&quot;" title="Direct link to Problem: &quot;Unbalanced Vouchers&quot;" translate="no">​</a></h3>
+<p><strong>Solution:</strong></p>
+<ul>
+<li class="">Voucher entries check karen</li>
+<li class="">Debit aur Credit same hone chahiye</li>
+<li class="">Excel file mein formula errors check karen</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="support-information">Support Information<a href="#support-information" class="hash-link" aria-label="Direct link to Support Information" title="Direct link to Support Information" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="demo-video">Demo Video:<a href="#demo-video" class="hash-link" aria-label="Direct link to Demo Video:" title="Direct link to Demo Video:" translate="no">​</a></h3>
+<ul>
+<li class="">Menu → Help → Video Tutorials</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="need-help">Need Help?<a href="#need-help" class="hash-link" aria-label="Direct link to Need Help?" title="Direct link to Need Help?" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Email:</strong> support@RPS Accounting.com</li>
+<li class=""><strong>Phone:</strong> 1800-XXX-XXXX</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additional-resources">Additional Resources:<a href="#additional-resources" class="hash-link" aria-label="Direct link to Additional Resources:" title="Direct link to Additional Resources:" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>User Manual:</strong> Settings → Help → User Guide</li>
+<li class=""><strong>FAQs:</strong> Settings → Help → Frequently Asked Questions</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tips-for-smooth-import">Tips for Smooth Import<a href="#tips-for-smooth-import" class="hash-link" aria-label="Direct link to Tips for Smooth Import" title="Direct link to Tips for Smooth Import" translate="no">​</a></h2>
+<ol>
+<li class=""><strong>Start Small</strong> - Pehle 5-10 entries se test karen</li>
+<li class=""><strong>Clean Data</strong> - Export se pehle Tally mein unwanted entries delete karen</li>
+<li class=""><strong>Backup</strong> - Hamesha backup len before import</li>
+<li class=""><strong>Verify</strong> - Import ke baad data verify zaroor karen</li>
+<li class=""><strong>Groups First</strong> - Pehle ledgers, phir vouchers import karen</li>
+</ol>
+<hr>
+<p><strong>Last Updated:</strong> February 2026
+<strong>Version:</strong> 1.0 (Initial Tally Import Feature)</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guides/TALLY_IMPORT_GUIDE.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/open-rpsaccounting/docs/guides/KEYBOARD_SHORTCUTS"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">RPS Accounting - Keyboard Shortcuts Reference</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/open-rpsaccounting/docs/guides/TALLY_ODBC_SETUP"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Tally ODBC Setup Guide</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#tally-se-rps-accounting-mein-data-import-kaise-kare" class="table-of-contents__link toc-highlight">Tally se RPS Accounting mein Data Import Kaise Kare</a></li><li><a href="#step-1-tally-se-data-export-karen" class="table-of-contents__link toc-highlight">Step 1: Tally se Data Export Karen</a><ul><li><a href="#ledgers-export-karne-ke-liye" class="table-of-contents__link toc-highlight">Ledgers Export Karne Ke Liye:</a></li><li><a href="#vouchersdaybook-export-karne-ke-liye" class="table-of-contents__link toc-highlight">Vouchers/Daybook Export Karne Ke Liye:</a></li></ul></li><li><a href="#step-2-rps-accounting-mein-import-karen" class="table-of-contents__link toc-highlight">Step 2: RPS Accounting mein Import Karen</a><ul><li><a href="#rps-accounting-application-open-karen" class="table-of-contents__link toc-highlight">RPS Accounting Application Open Karen</a></li><li><a href="#ledgers-import-karen" class="table-of-contents__link toc-highlight">Ledgers Import Karen</a></li><li><a href="#vouchers-import-karen" class="table-of-contents__link toc-highlight">Vouchers Import Karen</a></li></ul></li><li><a href="#important-notes" class="table-of-contents__link toc-highlight">Important Notes</a><ul><li><a href="#-kya-support-karta-hai" class="table-of-contents__link toc-highlight">✅ Kya Support Karta Hai:</a></li><li><a href="#️-dhyan-dene-waali-baatein" class="table-of-contents__link toc-highlight">⚠️ Dhyan Dene Waali Baatein:</a></li><li><a href="#-excel-format-requirements" class="table-of-contents__link toc-highlight">📋 Excel Format Requirements:</a></li></ul></li><li><a href="#verification-steps" class="table-of-contents__link toc-highlight">Verification Steps</a><ul><li><a href="#1-ledgers-check-karen" class="table-of-contents__link toc-highlight">1. Ledgers Check Karen</a></li><li><a href="#2-vouchers-check-karen" class="table-of-contents__link toc-highlight">2. Vouchers Check Karen</a></li><li><a href="#3-individual-ledger-check" class="table-of-contents__link toc-highlight">3. Individual Ledger Check</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#problem-no-data-found" class="table-of-contents__link toc-highlight">Problem: &quot;No Data Found&quot;</a></li><li><a href="#problem-validation-errors" class="table-of-contents__link toc-highlight">Problem: &quot;Validation Errors&quot;</a></li><li><a href="#problem-group-not-found" class="table-of-contents__link toc-highlight">Problem: &quot;Group Not Found&quot;</a></li><li><a href="#problem-unbalanced-vouchers" class="table-of-contents__link toc-highlight">Problem: &quot;Unbalanced Vouchers&quot;</a></li></ul></li><li><a href="#support-information" class="table-of-contents__link toc-highlight">Support Information</a><ul><li><a href="#demo-video" class="table-of-contents__link toc-highlight">Demo Video:</a></li><li><a href="#need-help" class="table-of-contents__link toc-highlight">Need Help?</a></li><li><a href="#additional-resources" class="table-of-contents__link toc-highlight">Additional Resources:</a></li></ul></li><li><a href="#tips-for-smooth-import" class="table-of-contents__link toc-highlight">Tips for Smooth Import</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/open-rpsaccounting/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/open-rpsaccounting/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/rahulnkvaidya/open-rpsaccounting" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 RPS accounting. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
